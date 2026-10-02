@@ -1,3 +1,5 @@
+// package model;
+
 /**
  * Modelo de dominio: representa un personaje del juego.
  * 
