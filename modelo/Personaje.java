@@ -12,7 +12,7 @@ public class Personaje {
     //Atributos privados: nadie de afuera puede modificarlos
     //directamente. Para acceder o modificarlos se usan los metodos
     //getters y setters definidos mas abajo.
-    private static int id;
+    private int id;
     private String nombre;
     private String clase;
     private String tribu;
@@ -39,6 +39,8 @@ public class Personaje {
     
     //Getters y setters: la unica forma de acceder o modificar
     //los atributos privados desde afuera de la clase.
+    public int getId() { return id;}
+    public void setId(int id) { this.id = id;} 
     public String getNombre() { return nombre;}
     public String getClase() { return clase;}
     public String getTribu() { return tribu;}
