@@ -15,22 +15,28 @@ public class Personaje {
     private int id;
     private String nombre;
     private String clase;
-    private String tribu;
+    //private String tribu;
     private int vida;
     private int defensa;
-    private int ataque;
+    //private int ataque;
 
     //Constructor sin id: el id lo asigna el PersonajeService al
     //momento de guardar el personaje. El usuario nunca elige id.
-    public Personaje(String nombre, String clase, String tribu, int vida, int defensa, int ataque) {
+    // public Personaje(String nombre, String clase, String tribu, int vida, int defensa, int ataque) {
+    //     this.nombre = nombre;
+    //     this.clase = clase;
+    //     this.tribu = tribu;
+    //     this.vida = vida;
+    //     this.defensa = defensa;
+    //     this.ataque = ataque;
+    // }
+    public Personaje(String nombre, String clase, int vida, int defensa) {
         this.nombre = nombre;
         this.clase = clase;
-        this.tribu = tribu;
         this.vida = vida;
         this.defensa = defensa;
-        this.ataque = ataque;
     }
-
+    
     //Constructor vacio: util para crear un Personaje y completarlo
     //con setters despues. Tambien lo necesitara Spring/JPA mas adelante en el curso.
     public Personaje() {
@@ -43,16 +49,16 @@ public class Personaje {
     public void setId(int id) { this.id = id;} 
     public String getNombre() { return nombre;}
     public String getClase() { return clase;}
-    public String getTribu() { return tribu;}
+    //public String getTribu() { return tribu;}
     public int getVida() { return vida;}
     public int getDefensa() { return defensa;}
-    public int getAtaque() { return ataque;}
+    //public int getAtaque() { return ataque;}
     public void setNombre(String nombre) {this.nombre = nombre;}
     public void setClase(String clase) {this.clase = clase;}
-    public void setTribu(String tribu) {this.tribu = tribu;}
+    //public void setTribu(String tribu) {this.tribu = tribu;}
     public void setVida(int vida) {this.vida = vida;}
     public void setDefensa(int defensa) {this.defensa = defensa;}
-    public void setAtaque(int ataque) {this.ataque = ataque;}
+    //public void setAtaque(int ataque) {this.ataque = ataque;}
 
     //toString() sobreescribe el metodo heredado de Object.
     //Sirve para mostrar el personaje de forma legible al listarlo
@@ -63,9 +69,9 @@ public class Personaje {
         return "ID: " + id +
                 " | " + nombre +
                 " | " + clase +
-                " | " + tribu +
+      //          " | " + tribu +
                 " | " + vida +
-                " | " + defensa +
-                " | " + ataque;
+                " | " + defensa; //+
+     //           " | " + ataque;
     }
 }
