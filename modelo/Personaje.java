@@ -67,11 +67,11 @@ public class Personaje {
     @Override
     public String toString() {
         return "ID: " + id +
-                " | " + nombre +
-                " | " + clase +
+                " | Nombre: " + nombre +
+                " | Clase: " + clase +
       //          " | " + tribu +
-                " | " + vida +
-                " | " + defensa; //+
+                " | Vida: " + vida +
+                " | Defensa: " + defensa; //+
      //           " | " + ataque;
     }
 }
